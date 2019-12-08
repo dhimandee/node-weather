@@ -1,0 +1,18 @@
+body{
+	margin:0 auto;
+	padding:0 16px;
+
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.main{
+	flex-grow: 1;
+}
+h1{
+	color: #777;
+}
+footer{
+	margin:15px 0;
+	border-top:1px solid #999;
+}
