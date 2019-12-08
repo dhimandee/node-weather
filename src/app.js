@@ -4,6 +4,7 @@ const app = express();
 const hbs = require('hbs');
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/weather')
+const port = process.env.PORT || 3000
 
 app.use(express.static(path.join(__dirname, '../public')))
 app.set('view engine', 'hbs');
@@ -77,6 +78,6 @@ app.get('*', (req, res)=>{
     })
 })
 
-app.listen(3000, ()=>{
-    console.log('Server up on 3000 port')
+app.listen(port, ()=>{
+    console.log('Server up on '+port+' port')
 });
